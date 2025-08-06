@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in); // Create a Scanner object for input
+
+        System.out.println("Enter a floating-point number:");
+        float floatValue = scanner.nextFloat(); // Read the float value from the user
+
+        // Display the float value with its full (approximate) precision
+        // This often reveals the tiny discrepancies
+        System.out.printf("%.6f%n", floatValue); // %.6f will print with 6 decimal places
+
+        // Display the float value formatted to 4 decimal places
+        System.out.printf("%.4f%n", floatValue); // %.4f will print with 4 decimal places
+
+        // Display the float value formatted to 2 decimal places (common for currency, etc.)
+        System.out.printf("%.2f%n", floatValue); // %.2f will print with 2 decimal places
+
+        // Display the float value rounded to the nearest whole number
+        System.out.println(Math.round(floatValue)); // Math.round() rounds to the nearest long or int
+
+        scanner.close(); // Close the scanner
+    }
+}
+
+    
