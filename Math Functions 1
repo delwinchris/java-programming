@@ -1,0 +1,42 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in); // Create a Scanner object for input
+
+        
+        double floatValue = scanner.nextDouble(); 
+
+        
+        int squareValue = scanner.nextInt(); 
+
+        
+        int baseValue = scanner.nextInt(); 
+
+        
+        int powerValue = scanner.nextInt(); 
+
+        
+        System.out.println((int) Math.floor(floatValue));
+
+        System.out.println((int) Math.ceil(floatValue));
+
+        // Calculate and display the Square Root
+        // Math.sqrt returns a double, so we cast it to an int for the desired output format
+        System.out.println((int) Math.sqrt(squareValue));
+
+        // Calculate and display the Power (base raised to the exponent)
+        // Math.pow returns a double, so we cast it to an int for the desired output format
+        System.out.println((int) Math.pow(baseValue, powerValue));
+
+        scanner.close(); // Close the scanner
+    }
+}
+
+    
